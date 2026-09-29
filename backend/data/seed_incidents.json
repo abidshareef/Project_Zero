@@ -1,0 +1,67 @@
+[
+  {
+    "incident_id": "CASE-184",
+    "machine_id": "CNC-47",
+    "machine_type": "CNC milling machine",
+    "symptoms": [
+      "spindle vibration",
+      "bearing temperature increase",
+      "intermittent shutdown"
+    ],
+    "measurements": {
+      "bearing_temp_delta_c": 18,
+      "vibration_rms": 7.4
+    },
+    "environment": [
+      "high humidity",
+      "two-shift operation"
+    ],
+    "diagnosis": "spindle bearing misalignment",
+    "intervention": "bearing replacement and spindle alignment",
+    "outcome": "successful for 312 operating hours",
+    "lesson": "Alignment must be verified after bearing replacement."
+  },
+  {
+    "incident_id": "CASE-229",
+    "machine_id": "CNC-52",
+    "machine_type": "CNC milling machine",
+    "symptoms": [
+      "spindle vibration",
+      "bearing temperature increase",
+      "intermittent shutdown"
+    ],
+    "measurements": {
+      "bearing_temp_delta_c": 16,
+      "vibration_rms": 7.1
+    },
+    "environment": [
+      "coolant contamination",
+      "two-shift operation"
+    ],
+    "diagnosis": "coolant contamination causing secondary bearing stress",
+    "intervention": "bearing replacement without coolant inspection",
+    "outcome": "failed again after 19 operating hours",
+    "lesson": "When coolant contamination is present, replacing the bearing alone can fail."
+  },
+  {
+    "incident_id": "CASE-311",
+    "machine_id": "CNC-41",
+    "machine_type": "CNC milling machine",
+    "symptoms": [
+      "temperature increase",
+      "intermittent shutdown"
+    ],
+    "measurements": {
+      "bearing_temp_delta_c": 12,
+      "vibration_rms": 5.8
+    },
+    "environment": [
+      "normal humidity",
+      "single-shift operation"
+    ],
+    "diagnosis": "cooling fan degradation",
+    "intervention": "fan replacement and thermal inspection",
+    "outcome": "successful for 205 operating hours",
+    "lesson": "Temperature increase without high vibration can indicate cooling issues."
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "EVAL-001",
+    "query": "CNC machine with high vibration, 18C bearing temperature increase, intermittent shutdown, and coolant contamination.",
+    "expected_case_ids": [
+      "CASE-229",
+      "CASE-184"
+    ],
+    "expected_behavior": "Prefer coolant inspection before bearing replacement."
+  },
+  {
+    "id": "EVAL-002",
+    "query": "CNC machine with temperature increase, low-to-moderate vibration, normal humidity, intermittent shutdown.",
+    "expected_case_ids": [
+      "CASE-311"
+    ],
+    "expected_behavior": "Consider cooling system inspection."
+  }
+]
